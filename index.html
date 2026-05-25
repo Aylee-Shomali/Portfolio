@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aylee Shomali — Full Stack Developer specializing in Angular, UI/UX, C#, and SQL Server based in Portland, OR." />
+    <title>Aylee Shomali — Full Stack Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body>
+
+    <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+    <header id="navbar" class="navbar">
+      <nav class="navbar__inner container">
+        <a href="#hero" class="navbar__logo" aria-label="Aylee Shomali home">AS</a>
+
+        <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="navbar__links" id="nav-links" role="list">
+          <li><a href="#about"     class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills"    class="nav-link">Skills</a></li>
+          <li><a href="#projects"  class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact"   class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+      <section id="hero" class="hero">
+        <div class="hero__shape hero__shape--circle"></div>
+        <div class="hero__shape hero__shape--arc"></div>
+        <div class="hero__shape hero__shape--dot-grid"></div>
+
+        <div class="container hero__content">
+          <p class="hero__eyebrow reveal-fade">Portland, Oregon</p>
+          <h1 class="hero__name reveal-up">
+            <span class="hero__name-first">Aylee</span>
+            <span class="hero__name-last">Shomali</span>
+          </h1>
+          <p class="hero__title reveal-up delay-1">Full Stack Developer</p>
+          <p class="hero__subtitle reveal-up delay-2">Angular &nbsp;·&nbsp; UI/UX &nbsp;·&nbsp; C# &nbsp;·&nbsp; SQL Server</p>
+
+          <div class="hero__actions reveal-up delay-3">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="#contact"  class="btn btn--outline">Get In Touch</a>
+          </div>
+
+          <div class="hero__socials reveal-fade delay-4">
+            <a href="https://www.linkedin.com/in/aylee-shomali/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://github.com/Aylee-Shomali" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__scroll-cue" aria-hidden="true">
+          <span class="hero__scroll-text">Scroll</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+      <section id="about" class="section about">
+        <div class="container">
+          <div class="section__header reveal-up">
+            <span class="section__label">About</span>
+            <h2 class="section__title">Who I Am</h2>
+          </div>
+
+          <div class="about__grid">
+            <div class="about__text reveal-up">
+              <p class="about__lead">
+                Creative Full Stack Developer specializing in Angular, UI/UX, C#,
+                and SQL Server based in Portland, OR.
+              </p>
+              <p>
+                Proactive and independent, I enjoy discovering solutions to complex
+                problems and accomplishing goals in an organized manner.
+                Experienced in taking full-stack web applications from initial
+                brainstorm to release, as part of collaborative teams and individually.
+              </p>
+              <p>
+                A firm believer in continuous growth, I am passionate about learning
+                and applying new technologies and development techniques.
+              </p>
+              <p>Outside of software development, I love to spend time on various creative projects.</p>
+            </div>
+
+            <aside class="about__meta reveal-up delay-1">
+              <div class="about__meta-item">
+                <span class="about__meta-label">Location</span>
+                <span class="about__meta-value">Portland, Oregon Metropolitan Area</span>
+              </div>
+              <div class="about__meta-item">
+                <span class="about__meta-label">Availability</span>
+                <span class="about__meta-value">On-site · Hybrid · Remote</span>
+              </div>
+              <div class="about__meta-item">
+                <span class="about__meta-label">Top Skills</span>
+                <span class="about__meta-value">Figma &nbsp;·&nbsp; ASP.NET MVC &nbsp;·&nbsp; Azure Functions</span>
+              </div>
+              <div class="about__meta-item">
+                <span class="about__meta-label">Publication</span>
+                <span class="about__meta-value"><em>Drawn to the Past</em></span>
+              </div>
+              <a
+                href="https://www.linkedin.com/in/aylee-shomali/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--secondary about__cta"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                View LinkedIn
+              </a>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════ EXPERIENCE ═══════════════════════════ -->
+      <section id="experience" class="section experience">
+        <div class="container">
+          <div class="section__header reveal-up">
+            <span class="section__label">Career</span>
+            <h2 class="section__title">Experience</h2>
+          </div>
+
+          <div class="timeline">
+
+            <!-- CorVel Corporation -->
+            <div class="timeline__company reveal-up">
+              <div class="timeline__company-header">
+                <div class="timeline__company-dot"></div>
+                <div class="timeline__company-info">
+                  <h3 class="timeline__company-name">CorVel Corporation</h3>
+                  <span class="timeline__company-tenure">4 years 10 months &nbsp;·&nbsp; Portland, Oregon Metropolitan Area</span>
+                </div>
+              </div>
+
+              <div class="timeline__roles">
+
+                <div class="timeline__role-item">
+                  <div class="timeline__role-header">
+                    <span class="timeline__role-title">Software Engineer</span>
+                    <span class="timeline__role-dates">July 2024 – Present &nbsp;·&nbsp; 1 yr 11 mos</span>
+                  </div>
+                  <ul class="timeline__bullets">
+                    <li>Developing and implementing Front-End features and bug fixes using Angular, Bootstrap, and Kendo UI.</li>
+                    <li>Contributing to and maintaining Back-End logic and APIs using C#; including Azure Functions.</li>
+                    <li>Implementing database changes in SQL Server; including triggers, stored procedures, table modifications, and data scripts.</li>
+                    <li>Contributing to the software development lifecycle (SDLC) through deployment scripting, process adherence, and team collaboration.</li>
+                    <li>Actively participating in code reviews, providing and incorporating feedback to maintain code standards.</li>
+                    <li>Collaborating with team members on implementation plans.</li>
+                    <li>Debugging web applications using Azure Application Insights and KQL queries.</li>
+                    <li>Creating and executing unit tests as needed.</li>
+                  </ul>
+                </div>
+
+                <div class="timeline__role-item">
+                  <div class="timeline__role-header">
+                    <span class="timeline__role-title">QA Automation Engineer</span>
+                    <span class="timeline__role-dates">February 2022 – June 2024 &nbsp;·&nbsp; 2 yrs 5 mos</span>
+                  </div>
+                  <ul class="timeline__bullets">
+                    <li>Creating, executing, and maintaining automated test cases for new and changing functionality using C#, Selenium WebDriver, SQL Server, and Visual Studio.</li>
+                    <li>Regression, functional, and integration testing in an Agile development environment.</li>
+                    <li>Identifying, documenting, and communicating bugs discovered during testing.</li>
+                    <li>Collaborating with QA team members in daily standups and meetings to discuss progress related to individual tasks/projects.</li>
+                    <li>Participating in code reviews as both reviewer and reviewee.</li>
+                  </ul>
+                </div>
+
+                <div class="timeline__role-item">
+                  <div class="timeline__role-header">
+                    <span class="timeline__role-title">Quality Assurance Engineer I</span>
+                    <span class="timeline__role-dates">August 2021 – February 2022 &nbsp;·&nbsp; 7 mos</span>
+                  </div>
+                  <ul class="timeline__bullets">
+                    <li>Creating, executing, and maintaining manual test cases for new and changing functionality.</li>
+                    <li>Creating test suites to verify development changes.</li>
+                    <li>Regression, functional, and integration testing in an Agile development environment.</li>
+                    <li>Identifying, documenting, and communicating bugs discovered during testing.</li>
+                    <li>Collaborating with QA team members in daily standups and meetings.</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Forward Focused LLC -->
+            <div class="timeline__company reveal-up">
+              <div class="timeline__company-header">
+                <div class="timeline__company-dot"></div>
+                <div class="timeline__company-info">
+                  <h3 class="timeline__company-name">Forward Focused LLC</h3>
+                  <span class="timeline__company-tenure">Portland, Oregon Metropolitan Area</span>
+                </div>
+              </div>
+
+              <div class="timeline__roles">
+                <div class="timeline__role-item">
+                  <div class="timeline__role-header">
+                    <span class="timeline__role-title">Web Developer</span>
+                    <span class="timeline__role-dates">February 2017 – Present &nbsp;·&nbsp; 9 yrs 4 mos</span>
+                  </div>
+                  <ul class="timeline__bullets">
+                    <li>Implemented website redesign and upgraded project to .Net 8.0.</li>
+                    <li>Created clickable prototype in Figma for entire website redesign.</li>
+                    <li>Designed and developed the company website using HTML, CSS, JS, Bootstrap and Azure.</li>
+                    <li>Created the logo design in communication with business owner.</li>
+                    <li>Assisted in editing written content on webpage.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cedar Mill Community Library -->
+            <div class="timeline__company reveal-up">
+              <div class="timeline__company-header">
+                <div class="timeline__company-dot"></div>
+                <div class="timeline__company-info">
+                  <h3 class="timeline__company-name">Cedar Mill Community Library</h3>
+                  <span class="timeline__company-tenure">Portland, Oregon Area</span>
+                </div>
+              </div>
+
+              <div class="timeline__roles">
+                <div class="timeline__role-item">
+                  <div class="timeline__role-header">
+                    <span class="timeline__role-title">Shelving Assistant</span>
+                    <span class="timeline__role-dates">May 2018 – March 2020 &nbsp;·&nbsp; 1 yr 11 mos</span>
+                  </div>
+                  <ul class="timeline__bullets">
+                    <li>Re-shelving in all sections of the library.</li>
+                    <li>Helping public locate library items and answering other questions.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /timeline -->
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════ SKILLS ═══════════════════════════ -->
+      <section id="skills" class="section skills">
+        <div class="container">
+          <div class="section__header reveal-up">
+            <span class="section__label">Toolkit</span>
+            <h2 class="section__title">Languages &amp; Tools</h2>
+          </div>
+          <div class="skills__grid" id="skills-grid" aria-label="Technologies and tools"></div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════ CERTIFICATIONS ═══════════════════════════ -->
+      <section id="certifications" class="section certifications">
+        <div class="container">
+          <div class="section__header reveal-up">
+            <span class="section__label">Learning</span>
+            <h2 class="section__title">Certifications</h2>
+          </div>
+          <div class="certs__grid">
+            <div class="cert-card card reveal-up">
+              <div class="cert-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <p class="cert-card__name">Demystifying the .NET Platform: Structure, Features, and Potential</p>
+            </div>
+            <div class="cert-card card reveal-up delay-1">
+              <div class="cert-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <p class="cert-card__name">C# Exception and Error Handling</p>
+            </div>
+            <div class="cert-card card reveal-up delay-2">
+              <div class="cert-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <p class="cert-card__name">Ten Tips for the C# Developer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════ PROJECTS ═══════════════════════════ -->
+      <section id="projects" class="section projects">
+        <div class="container">
+          <div class="section__header reveal-up">
+            <span class="section__label">GitHub</span>
+            <h2 class="section__title">Projects</h2>
+            <p class="section__desc">Live data pulled directly from GitHub.</p>
+          </div>
+          <div class="projects__grid" id="projects-grid">
+            <div class="projects__loading" id="projects-loading" aria-live="polite">
+              <div class="loading-spinner" aria-label="Loading projects"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════ EDUCATION ═══════════════════════════ -->
+      <section id="education" class="section education">
+        <div class="container">
+          <div class="section__header reveal-up">
+            <span class="section__label">Academic</span>
+            <h2 class="section__title">Education</h2>
+          </div>
+
+          <div class="education__grid">
+
+            <div class="education__card card reveal-up">
+              <div class="education__card-accent"></div>
+              <div class="education__card-body">
+                <h3 class="education__school">Oregon State University</h3>
+                <p class="education__degree">Bachelor of Science — Computer Science</p>
+                <span class="education__dates chip">September 2022 – June 2024</span>
+              </div>
+            </div>
+
+            <div class="education__card card reveal-up delay-1">
+              <div class="education__card-accent"></div>
+              <div class="education__card-body">
+                <h3 class="education__school">Portland Community College</h3>
+                <p class="education__degree">University Transfer Associate of Science — Computer Science</p>
+                <span class="education__dates chip">September 2020 – June 2022</span>
+              </div>
+            </div>
+
+            <div class="education__card card reveal-up delay-2">
+              <div class="education__card-accent education__card-accent--tertiary"></div>
+              <div class="education__card-body">
+                <h3 class="education__school">Homeschool</h3>
+                <p class="education__degree">General Education</p>
+                <span class="education__dates chip">2006 – 2020</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <div class="contact__inner reveal-up">
+            <span class="section__label">Say Hello</span>
+            <h2 class="section__title">Get In Touch</h2>
+            <p class="contact__text">
+              Interested in working together or just want to connect?
+              Reach out on LinkedIn or explore my work on GitHub.
+            </p>
+            <div class="contact__links">
+              <a
+                href="https://www.linkedin.com/in/aylee-shomali/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact__link-card card"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                <span class="contact__link-label">LinkedIn</span>
+                <span class="contact__link-value">aylee-shomali</span>
+              </a>
+              <a
+                href="https://github.com/Aylee-Shomali"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact__link-card card"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                <span class="contact__link-label">GitHub</span>
+                <span class="contact__link-value">Aylee-Shomali</span>
+              </a>
+              <a
+                href="mailto:aylee.shomali@gmail.com"
+                class="contact__link-card card"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+                <span class="contact__link-label">Email</span>
+                <span class="contact__link-value">aylee.shomali@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__copy">© 2025 Aylee Shomali</p>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/aylee-shomali/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer__social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/Aylee-Shomali" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="footer__social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

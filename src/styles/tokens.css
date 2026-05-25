@@ -1,0 +1,89 @@
+/* ─────────────────────────────────────────────────
+   Material 3 · Mid-Century Modern Design Tokens
+───────────────────────────────────────────────── */
+:root {
+  /* ── Primary: Burnt Orange ── */
+  --color-primary:           #BF5B2A;
+  --color-primary-hover:     #A84D22;
+  --color-primary-container: #FFDBCA;
+  --color-on-primary:        #FFFFFF;
+  --color-on-primary-container: #3C0E00;
+
+  /* ── Secondary: Rich Brown ── */
+  --color-secondary:           #7A4933;
+  --color-secondary-container: #FFDBC9;
+  --color-on-secondary:        #FFFFFF;
+  --color-on-secondary-container: #2E1200;
+
+  /* ── Tertiary: Leafy Green ── */
+  --color-tertiary:           #4A6741;
+  --color-tertiary-container: #CBF0B7;
+  --color-on-tertiary:        #FFFFFF;
+  --color-on-tertiary-container: #062000;
+
+  /* ── Neutrals: Warm Cream ── */
+  --color-background:           #F6EEE0;
+  --color-surface:              #FBF6EE;
+  --color-surface-low:          #F3EBD9;
+  --color-surface-container:    #EFE6D4;
+  --color-surface-high:         #E9E0CE;
+  --color-on-background:        #211A13;
+  --color-on-surface:           #211A13;
+  --color-on-surface-variant:   #524338;
+  --color-outline:              #9C8071;
+  --color-outline-variant:      #D9C8B5;
+
+  /* ── Semantic ── */
+  --color-error: #BA1A1A;
+
+  /* ── Typography ── */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+  --text-6xl:  3.75rem;
+  --text-7xl:  4.5rem;
+
+  /* ── Spacing ── */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ── Elevation (M3 tonal) ── */
+  --elevation-1: 0 1px 2px rgba(33,26,19,.08), 0 1px 3px 1px rgba(33,26,19,.06);
+  --elevation-2: 0 1px 2px rgba(33,26,19,.08), 0 2px 6px 2px rgba(33,26,19,.08);
+  --elevation-3: 0 4px 8px 3px rgba(33,26,19,.1),  0 1px 3px rgba(33,26,19,.1);
+
+  /* ── Shape ── */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-full: 9999px;
+
+  /* ── Motion ── */
+  --ease-standard:   cubic-bezier(0.2, 0, 0, 1);
+  --ease-decelerate: cubic-bezier(0, 0, 0, 1);
+  --ease-accelerate: cubic-bezier(0.3, 0, 1, 1);
+  --duration-short:  200ms;
+  --duration-medium: 400ms;
+  --duration-long:   700ms;
+}
