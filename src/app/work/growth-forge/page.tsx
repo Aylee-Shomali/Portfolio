@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Growth Forge — Aylee Shomali",
-  description: "Case study: Led a 5-developer team to build a data-ingestion interface for a real business client.",
+  description: "Case study: Data-ingestion and mapping interface — team lead, OSU CS Capstone.",
 };
 
 export default function GrowthForgePage() {
@@ -24,8 +24,8 @@ export default function GrowthForgePage() {
         Growth Forge
       </h1>
       <p className="mt-4 text-lg text-muted max-w-xl">
-        Led a 5-developer team to build a third-party data-ingestion and mapping
-        interface for a real business client.
+        Third-party data-ingestion and mapping interface, built for a real
+        business client as part of the OSU CS Capstone.
       </p>
 
       {/* Image placeholder */}
@@ -37,23 +37,22 @@ export default function GrowthForgePage() {
       <div className="mt-12 grid md:grid-cols-3 gap-8 py-8 border-y border-ink/10">
         <div>
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Role</span>
-          <p className="mt-2 font-semibold">Team Lead — 5 developers</p>
+          <p className="mt-2 font-semibold">Team lead — 5 developers</p>
         </div>
         <div>
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Context</span>
           <p className="mt-2 font-semibold">OSU CS Capstone, real client</p>
         </div>
         <div>
-          <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Skills</span>
-          <p className="mt-2 font-semibold">Leadership, UI, requirements, PM</p>
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Focus</span>
+          <p className="mt-2 font-semibold">Front end, UI, requirements, PM</p>
         </div>
       </div>
 
       {/* Pullquote placeholder */}
       <blockquote className="mt-12 border-l-4 border-orange pl-6 py-2">
         <p className="font-display text-xl md:text-2xl italic text-ink/80">
-          &ldquo;Client feedback quote coming soon — the business owner provided
-          special positive feedback on the team&apos;s delivery.&rdquo;
+          &ldquo;Client feedback quote coming soon.&rdquo;
         </p>
         <cite className="mt-3 block font-mono text-sm text-muted not-italic">
           — Business Client
@@ -62,56 +61,42 @@ export default function GrowthForgePage() {
 
       <div className="mt-12 space-y-12 max-w-2xl">
         <section>
-          <h2 className="font-display text-2xl font-semibold">The Problem</h2>
+          <h2 className="font-display text-2xl font-semibold">Overview</h2>
           <p className="mt-4 text-muted leading-relaxed">
-            A business client needed a way to ingest third-party data and map it to
-            their internal systems. The project required gathering requirements from
-            a real stakeholder, designing the interface, and delivering working
-            software within the academic timeline.
+            A business client needed a way to ingest third-party data and map it
+            to their internal systems. The project was scoped as a capstone at
+            Oregon State, with a real stakeholder and a real delivery deadline.
           </p>
         </section>
 
         <section>
-          <h2 className="font-display text-2xl font-semibold">My Role</h2>
-          <p className="mt-4 text-muted leading-relaxed">
-            I led the team of five developers. That meant owning the project
-            management, driving requirements gathering with the client, prototyping
-            the UI, coordinating development work, and ensuring we delivered on
-            time. The team earned top grades and received special positive feedback
-            from the business owner.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="font-display text-2xl font-semibold">Approach</h2>
+          <h2 className="font-display text-2xl font-semibold">What I Did</h2>
           <ul className="mt-4 space-y-3 text-muted leading-relaxed">
             <li className="flex gap-3">
               <span className="text-orange font-mono text-sm mt-0.5">01</span>
-              <span>Gathered requirements directly from the business client, translating business needs into technical specifications.</span>
+              <span>Led the team of 5 — managed the project timeline, ran standups, and coordinated code reviews.</span>
             </li>
             <li className="flex gap-3">
               <span className="text-orange font-mono text-sm mt-0.5">02</span>
-              <span>Prototyped the data-mapping interface, ensuring the UX was intuitive for non-technical users.</span>
+              <span>Gathered requirements directly from the business client.</span>
             </li>
             <li className="flex gap-3">
               <span className="text-orange font-mono text-sm mt-0.5">03</span>
-              <span>Coordinated development across five developers, running standups and code reviews to maintain quality.</span>
+              <span>Prototyped the data-mapping interface.</span>
             </li>
             <li className="flex gap-3">
               <span className="text-orange font-mono text-sm mt-0.5">04</span>
-              <span>Delivered a working data-ingestion and mapping interface on time, exceeding client expectations.</span>
+              <span>Delivered a working data-ingestion and mapping interface on time.</span>
             </li>
           </ul>
         </section>
 
         <section>
-          <h2 className="font-display text-2xl font-semibold">Why It Matters</h2>
-          <p className="mt-4 text-muted leading-relaxed">
-            This project demonstrates leadership in action — not just writing code,
-            but owning the entire delivery lifecycle with a real client and a real team.
-            Top grades and a special note from the business client validate
-            the result. It&apos;s the &ldquo;leader mindset&rdquo; in practice.
-          </p>
+          <h2 className="font-display text-2xl font-semibold">Results</h2>
+          <ul className="mt-4 space-y-2 text-muted leading-relaxed">
+            <li>Top grades for the team</li>
+            <li>Positive feedback from the business client</li>
+          </ul>
         </section>
       </div>
 

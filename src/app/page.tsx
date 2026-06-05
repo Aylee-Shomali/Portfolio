@@ -18,7 +18,7 @@ export default function Home() {
           <ProjectCard
             number="01"
             title="Forward Focused LLC"
-            description="Designed, built, and shipped a complete website redesign solo — from discovery and Figma prototyping to .NET 8 deployment on Azure."
+            description="Full website redesign — Figma prototyping, logo design, front-end build, and .NET 8 deployment on Azure. Solo project, working directly with the business owner."
             tags={["Figma", "HTML/CSS", ".NET 8", "Azure"]}
             href="/work/forward-focused"
             variant="orange"
@@ -26,7 +26,7 @@ export default function Home() {
           <ProjectCard
             number="02"
             title="Growth Forge"
-            description="Led a 5-developer team to build a data-ingestion and mapping interface for a real business client. Top grades, glowing client feedback."
+            description="Data-ingestion and mapping interface built for a real business client. Team of 5 developers, OSU CS Capstone project."
             tags={["React", "Node.js", "Team Lead", "Capstone"]}
             href="/work/growth-forge"
           />
@@ -43,11 +43,10 @@ export default function Home() {
               <span className="text-canvas/50">Get in Touch</span>
             </SectionLabel>
             <h2 className="mt-4 font-display text-3xl md:text-4xl font-semibold">
-              Have a project in mind?
+              Interested in working together?
             </h2>
             <p className="mt-3 text-canvas/70 max-w-lg">
-              I&apos;m currently open to full-time product roles and select freelance
-              projects. Let&apos;s talk about what you&apos;re building.
+              Open to full-time roles and select freelance projects.
             </p>
           </div>
           <a

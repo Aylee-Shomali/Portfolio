@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact — Aylee Shomali",
-  description: "Get in touch — let's talk about what you're building.",
+  description: "Get in touch — email or LinkedIn.",
 };
 
 export default function ContactPage() {
@@ -12,12 +12,10 @@ export default function ContactPage() {
       <div className="max-w-2xl">
         <SectionLabel>Contact</SectionLabel>
         <h1 className="mt-4 font-display text-5xl md:text-6xl font-semibold">
-          Let&apos;s talk.
+          Get in touch
         </h1>
         <p className="mt-4 text-lg text-muted leading-relaxed">
-          I&apos;m currently open to full-time product roles and select freelance
-          projects. If you have something interesting in mind, I&apos;d love to
-          hear about it.
+          Open to full-time roles and select freelance projects.
         </p>
 
         <div className="mt-12 space-y-6">
@@ -61,15 +59,6 @@ export default function ContactPage() {
               </p>
             </div>
           </a>
-        </div>
-
-        <div className="mt-12 p-8 bg-orange text-canvas rounded-sm">
-          <p className="font-display text-2xl font-semibold">
-            Prefer a quick hello?
-          </p>
-          <p className="mt-2 text-canvas/80">
-            Drop me a line at the email above. I typically respond within a day.
-          </p>
         </div>
       </div>
     </section>

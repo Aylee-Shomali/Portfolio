@@ -8,19 +8,19 @@ const facets = [
     number: "01",
     title: "Design",
     description:
-      "From user research and wireframes in Figma to polished UI — I shape how products look, feel, and flow.",
+      "User research, wireframes, and prototyping in Figma. UI/UX design and graphic design.",
   },
   {
     number: "02",
     title: "Build",
     description:
-      "Full-stack implementation across React, Angular, Vue, Node, .NET, and SQL — front-end to back-end to database.",
+      "Full-stack development across React, Angular, Vue, Node, .NET, and SQL Server.",
   },
   {
     number: "03",
     title: "Ship",
     description:
-      "From CI/CD pipelines and Azure deployments to client handoff — I own the product from idea to production.",
+      "CI/CD, Azure deployments, automated testing, and production support.",
   },
 ];
 
@@ -30,7 +30,7 @@ export function HomeSkills() {
       <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
         <SectionLabel>What I Do</SectionLabel>
         <h2 className="mt-4 font-display text-4xl md:text-5xl font-semibold">
-          End-to-end ownership
+          Design, build, and ship
         </h2>
 
         <StaggerChildren className="mt-12 grid md:grid-cols-3 gap-8">

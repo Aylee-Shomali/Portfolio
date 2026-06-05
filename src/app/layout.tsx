@@ -24,13 +24,13 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aylee Shomali — Creative Full-Stack Developer",
+  title: "Aylee Shomali — Full-Stack Developer",
   description:
-    "I design it, build it, and ship it. Creative full-stack developer based in Portland, OR — five years shipping web apps end to end.",
+    "Full-stack developer based in Portland, OR. Design and development — UI, back-end services, and deployment.",
   openGraph: {
-    title: "Aylee Shomali — Creative Full-Stack Developer",
+    title: "Aylee Shomali — Full-Stack Developer",
     description:
-      "Design + code, owned end to end. Portfolio of a creative full-stack developer.",
+      "Full-stack developer — design and development, end to end.",
     type: "website",
   },
 };

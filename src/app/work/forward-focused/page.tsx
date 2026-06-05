@@ -4,13 +4,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Forward Focused LLC — Aylee Shomali",
-  description: "Case study: Complete website redesign from discovery to deployment, owned end to end.",
+  description: "Case study: Complete website redesign — design, development, and deployment.",
 };
 
 export default function ForwardFocusedPage() {
   return (
     <article className="max-w-4xl mx-auto px-6 py-20 md:py-28">
-      {/* Breadcrumb */}
       <nav className="mb-8">
         <Link
           href="/work"
@@ -25,8 +24,7 @@ export default function ForwardFocusedPage() {
         Forward Focused LLC
       </h1>
       <p className="mt-4 text-lg text-muted max-w-xl">
-        Designed, built, and shipped a company&apos;s full website redesign solo,
-        working directly with the business owner.
+        Complete website redesign for a small business — design through deployment, working directly with the business owner.
       </p>
 
       {/* Image placeholder */}
@@ -38,7 +36,7 @@ export default function ForwardFocusedPage() {
       <div className="mt-12 grid md:grid-cols-3 gap-8 py-8 border-y border-ink/10">
         <div>
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Role</span>
-          <p className="mt-2 font-semibold">Everything — solo end-to-end</p>
+          <p className="mt-2 font-semibold">Solo — design & development</p>
         </div>
         <div>
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Stack</span>
@@ -46,64 +44,44 @@ export default function ForwardFocusedPage() {
         </div>
         <div>
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Scope</span>
-          <p className="mt-2 font-semibold">Discovery → Design → Build → Deploy</p>
+          <p className="mt-2 font-semibold">Discovery, design, build, deploy</p>
         </div>
       </div>
 
-      {/* Case study body */}
       <div className="mt-12 space-y-12 max-w-2xl">
         <section>
-          <h2 className="font-display text-2xl font-semibold">The Problem</h2>
+          <h2 className="font-display text-2xl font-semibold">Overview</h2>
           <p className="mt-4 text-muted leading-relaxed">
-            Forward Focused LLC needed a complete website redesign that better
-            reflected their brand and served their customers. They needed someone
-            who could handle the entire project — not just code, but design,
-            content strategy, and deployment.
+            Forward Focused LLC needed a website redesign that better represented
+            their brand. The project covered the full scope — from initial discovery
+            conversations with the business owner through to production deployment.
           </p>
         </section>
 
         <section>
-          <h2 className="font-display text-2xl font-semibold">My Role</h2>
-          <p className="mt-4 text-muted leading-relaxed">
-            I owned everything. I worked directly with the business owner from
-            discovery through deployment — no handoffs, no gaps. This meant
-            requirements gathering, creating a clickable Figma prototype for the
-            full redesign, designing the logo in collaboration with the owner,
-            building the site, assisting in editing site copy, and deploying to
-            production.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="font-display text-2xl font-semibold">Approach</h2>
+          <h2 className="font-display text-2xl font-semibold">What I Did</h2>
           <ul className="mt-4 space-y-3 text-muted leading-relaxed">
             <li className="flex gap-3">
               <span className="text-orange font-mono text-sm mt-0.5">01</span>
-              <span>Created a clickable Figma prototype for the full redesign, iterating with the business owner until the vision was right.</span>
+              <span>Created a clickable Figma prototype for the full redesign, iterating with the business owner on direction.</span>
             </li>
             <li className="flex gap-3">
               <span className="text-orange font-mono text-sm mt-0.5">02</span>
-              <span>Designed the logo in collaboration with the owner, ensuring brand consistency across all touchpoints.</span>
+              <span>Designed the logo in collaboration with the owner.</span>
             </li>
             <li className="flex gap-3">
               <span className="text-orange font-mono text-sm mt-0.5">03</span>
-              <span>Built the site with HTML, CSS, JavaScript, and Bootstrap, prioritizing performance and responsiveness.</span>
+              <span>Built the site with HTML, CSS, JavaScript, and Bootstrap.</span>
             </li>
             <li className="flex gap-3">
               <span className="text-orange font-mono text-sm mt-0.5">04</span>
-              <span>Upgraded the project to .NET 8 and deployed on Azure, handling the full infrastructure setup.</span>
+              <span>Upgraded the project to .NET 8 and deployed on Azure.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-orange font-mono text-sm mt-0.5">05</span>
+              <span>Assisted in editing site copy and handled client communication throughout.</span>
             </li>
           </ul>
-        </section>
-
-        <section>
-          <h2 className="font-display text-2xl font-semibold">Why It Matters</h2>
-          <p className="mt-4 text-muted leading-relaxed">
-            This project is proof of true end-to-end ownership. One person — discovery,
-            design, build, deploy, client communication. No specialists needed, no
-            handoff friction. The kind of work that shows what &ldquo;full-stack&rdquo;
-            actually means when someone takes it seriously.
-          </p>
         </section>
       </div>
 

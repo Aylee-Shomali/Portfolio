@@ -12,18 +12,18 @@ export function HomeHero() {
           {/* Text side */}
           <div className="md:col-span-7">
             <FadeIn>
-              <SectionLabel>Creative Full-Stack Developer</SectionLabel>
+              <SectionLabel>Full-Stack Developer · Portland, OR</SectionLabel>
             </FadeIn>
             <FadeIn delay={0.1}>
               <h1 className="mt-6 font-display text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] tracking-tight">
-                I design it, build it,{" "}
-                <span className="text-orange">and ship it.</span>
+                Aylee Shomali
               </h1>
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className="mt-6 text-lg md:text-xl text-muted max-w-xl leading-relaxed">
-                Five years shipping full-stack web apps. I care about the whole
-                product — the interface people see and the systems underneath.
+                Design and development, end to end. Five years building
+                full-stack web applications — from UI design in Figma to
+                back-end services and deployment.
               </p>
             </FadeIn>
             <FadeIn delay={0.3}>
@@ -47,21 +47,21 @@ export function HomeHero() {
           {/* Geometric accent */}
           <div className="hidden md:flex md:col-span-5 justify-end items-start pt-8">
             <FadeIn delay={0.3}>
-              <div className="relative">
-                <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full bg-orange/10 flex items-center justify-center">
-                  <div className="w-40 h-40 lg:w-52 lg:h-52 rounded-full bg-orange/20 flex items-center justify-center">
-                    <div className="w-20 h-20 lg:w-28 lg:h-28 rounded-full bg-orange" />
-                  </div>
-                </div>
-                <div className="absolute -bottom-4 -left-8 w-16 h-16 bg-teal/20 rounded-full" />
-                <div className="absolute top-4 -right-4 w-8 h-24 bg-wood/30 rounded-full" />
+              <div className="relative w-64 h-64 lg:w-80 lg:h-80">
+                {/* Half-circle arc */}
+                <div className="absolute inset-0 border-[3px] border-orange/30 rounded-full" />
+                <div className="absolute top-6 left-6 right-6 bottom-6 border-[3px] border-orange/15 rounded-full" />
+                {/* Offset solid arc — bottom-right quarter */}
+                <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-orange/10 rounded-tl-full" />
+                {/* Small accent shapes */}
+                <div className="absolute -bottom-3 -left-6 w-12 h-12 border-2 border-teal/25 rounded-full" />
+                <div className="absolute top-8 -right-3 w-6 h-20 bg-wood/20 rounded-full" />
               </div>
             </FadeIn>
           </div>
         </div>
       </div>
 
-      {/* Decorative arc */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-ink/5" />
     </section>
   );

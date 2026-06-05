@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About — Aylee Shomali",
-  description: "Creative full-stack developer based in Portland, OR. Design + code, owned end to end.",
+  description: "Full-stack developer based in Portland, OR. Design and development, end to end.",
 };
 
 const skills = {
@@ -39,16 +39,10 @@ export default function AboutPage() {
         <div className="md:col-span-5">
           <div className="relative">
             <div className="aspect-[3/4] bg-surface-dark rounded-sm border border-ink/5 flex items-center justify-center">
-              <div className="text-center px-8">
-                <div className="w-24 h-24 mx-auto rounded-full bg-orange/20 flex items-center justify-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-orange/40" />
-                </div>
-                <span className="font-mono text-sm text-muted">
-                  Profile photo coming soon
-                </span>
-              </div>
+              <span className="font-mono text-sm text-muted">
+                Photo coming soon
+              </span>
             </div>
-            {/* Geometric accent behind photo */}
             <div className="absolute -bottom-4 -right-4 w-full h-full bg-orange/10 rounded-sm -z-10" />
           </div>
         </div>
@@ -60,45 +54,59 @@ export default function AboutPage() {
             Aylee Shomali
           </h1>
           <p className="mt-2 font-mono text-sm text-orange">
-            Portland, OR · Creative Full-Stack Developer
+            Portland, OR · Full-Stack Developer
           </p>
 
           <div className="mt-8 space-y-5 text-muted leading-relaxed">
             <p>
-              I&apos;m a full-stack developer who designs. Or a designer who codes.
-              Either way, I take products from a vague idea to deployment — and I
-              care about every layer in between.
+              Full-stack developer with a design background. I work across the
+              stack — UI design in Figma, front-end development in React, Angular,
+              and Vue, back-end services in C# and Node, and database work in
+              SQL Server and MongoDB.
             </p>
             <p>
-              My path wasn&apos;t the typical CS pipeline. I was homeschooled, started
-              at community college, and earned my BS in Computer Science from Oregon
-              State University in 2024 — while working full-time. That
-              self-directed discipline is the through-line of everything I do.
+              I was homeschooled, started at community college, and earned my BS
+              in Computer Science from Oregon State University in 2024 while
+              working full-time.
             </p>
             <p>
-              At CorVel Corporation, I grew from QA Engineer to Software Engineer
-              over three years, shipping front-end features in Angular, building
-              back-end services in C#, and managing data in SQL Server. On my own
-              time, I run Forward Focused LLC — designing and building complete web
-              products for clients, end to end.
-            </p>
-            <p>
-              What sets me apart: I don&apos;t just make things look good or make
-              things work. I do both — and I take pleasure in making the invisible
-              parts (architecture, information design, systems) as clean and
-              intentional as the UI.
+              At CorVel Corporation, I&apos;ve moved from QA Engineer to QA
+              Automation Engineer to Software Engineer over three years — building
+              Angular front ends, C# back-end services, and working with
+              SQL Server day to day. Outside of that, I run Forward Focused LLC,
+              taking on web design and development projects for clients.
             </p>
           </div>
 
-          {/* Education */}
-          <div className="mt-12 p-6 bg-surface rounded-sm border border-ink/5">
-            <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted">
-              Education
-            </span>
-            <p className="mt-2 font-semibold">
-              BS in Computer Science — Oregon State University
-            </p>
-            <p className="text-sm text-muted">2024</p>
+          {/* Experience timeline */}
+          <div className="mt-10 space-y-4">
+            <div className="p-5 bg-surface rounded-sm border border-ink/5">
+              <div className="flex justify-between items-start">
+                <div>
+                  <p className="font-semibold">Software Engineer</p>
+                  <p className="text-sm text-muted">CorVel Corporation</p>
+                </div>
+                <span className="font-mono text-xs text-muted">2021 – Present</span>
+              </div>
+            </div>
+            <div className="p-5 bg-surface rounded-sm border border-ink/5">
+              <div className="flex justify-between items-start">
+                <div>
+                  <p className="font-semibold">Owner / Developer</p>
+                  <p className="text-sm text-muted">Forward Focused LLC</p>
+                </div>
+                <span className="font-mono text-xs text-muted">Ongoing</span>
+              </div>
+            </div>
+            <div className="p-5 bg-surface rounded-sm border border-ink/5">
+              <div className="flex justify-between items-start">
+                <div>
+                  <p className="font-semibold">BS Computer Science</p>
+                  <p className="text-sm text-muted">Oregon State University</p>
+                </div>
+                <span className="font-mono text-xs text-muted">2024</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -6,9 +6,9 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-12 md:py-16">
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div>
-            <p className="font-display text-2xl font-semibold">Let&apos;s work together.</p>
-            <p className="mt-2 text-muted max-w-md">
-              Currently open to full-time product roles and select freelance projects.
+            <p className="font-display text-2xl font-semibold">Aylee Shomali</p>
+            <p className="mt-2 text-muted text-sm">
+              Full-stack developer · Portland, OR
             </p>
           </div>
           <div className="flex flex-col gap-3 text-sm">
@@ -35,7 +35,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 pt-6 border-t border-ink/5 text-xs text-muted font-mono">
-          © {new Date().getFullYear()} Aylee Shomali. Built with Next.js.
+          © {new Date().getFullYear()} Aylee Shomali
         </div>
       </div>
     </footer>

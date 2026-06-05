@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Work — Aylee Shomali",
-  description: "Selected projects by Aylee Shomali — design, build, and ship end to end.",
+  description: "Selected projects — design, development, and deployment.",
 };
 
 export default function WorkPage() {
@@ -14,16 +14,12 @@ export default function WorkPage() {
       <h1 className="mt-4 font-display text-5xl md:text-6xl font-semibold">
         Selected projects
       </h1>
-      <p className="mt-4 text-muted text-lg max-w-xl">
-        A look at recent work — each showcasing end-to-end ownership from design
-        through deployment.
-      </p>
 
       <div className="mt-16 grid md:grid-cols-2 gap-6">
         <ProjectCard
           number="01"
           title="Forward Focused LLC"
-          description="Designed, built, and shipped a complete website redesign solo — from discovery and Figma prototyping to .NET 8 deployment on Azure."
+          description="Full website redesign — Figma prototyping, logo design, front-end build, and .NET 8 deployment on Azure. Solo project, working directly with the business owner."
           tags={["Figma", "HTML/CSS", ".NET 8", "Azure"]}
           href="/work/forward-focused"
           variant="orange"
@@ -31,7 +27,7 @@ export default function WorkPage() {
         <ProjectCard
           number="02"
           title="Growth Forge"
-          description="Led a 5-developer team to build a data-ingestion and mapping interface for a real business client. Top grades, glowing client feedback."
+          description="Data-ingestion and mapping interface built for a real business client. Team of 5 developers, OSU CS Capstone project."
           tags={["React", "Node.js", "Team Lead", "Capstone"]}
           href="/work/growth-forge"
         />
@@ -43,32 +39,24 @@ export default function WorkPage() {
         <h2 className="mt-4 font-display text-3xl font-semibold">
           CorVel Corporation
         </h2>
-        <p className="mt-1 font-mono text-sm text-muted">2021 – Present</p>
-        <p className="mt-4 text-muted leading-relaxed max-w-2xl">
-          Promoted from QA Engineer I → QA Automation Engineer → Software Engineer.
-          Building front-end features in Angular / Bootstrap / Kendo UI; back-end
-          services in C# / Azure Functions / APIs; managing data with SQL Server
-          stored procedures, triggers, and scripts. Debugging with Azure Application
-          Insights and KQL, conducting code reviews, and maintaining automated test
-          suites in C# with Selenium.
-        </p>
-        <div className="mt-6 flex flex-wrap gap-2">
-          {[
-            "Angular",
-            "C#",
-            "Azure Functions",
-            "SQL Server",
-            "Selenium",
-            "Kendo UI",
-            "KQL",
-          ].map((tag) => (
-            <span
-              key={tag}
-              className="font-mono text-xs px-2 py-1 bg-surface-dark text-muted rounded-sm"
-            >
-              {tag}
-            </span>
-          ))}
+        <p className="mt-1 font-mono text-sm text-muted">2021 – Present · QA Engineer I → QA Automation Engineer → Software Engineer</p>
+        <div className="mt-6 grid sm:grid-cols-2 gap-4 text-sm text-muted">
+          <div>
+            <p className="font-semibold text-ink mb-2">Front End</p>
+            <p>Angular, Bootstrap, Kendo UI</p>
+          </div>
+          <div>
+            <p className="font-semibold text-ink mb-2">Back End</p>
+            <p>C#, Azure Functions, REST APIs</p>
+          </div>
+          <div>
+            <p className="font-semibold text-ink mb-2">Data</p>
+            <p>SQL Server — stored procedures, triggers, data scripts</p>
+          </div>
+          <div>
+            <p className="font-semibold text-ink mb-2">Testing & Tooling</p>
+            <p>Selenium (C#), Azure Application Insights, KQL, code reviews</p>
+          </div>
         </div>
       </div>
     </section>
