@@ -4,15 +4,16 @@ import { FadeIn, StaggerChildren, StaggerItem } from "@/components/motion";
 
 const skills = {
   Build: [
+    "Angular",
     "TypeScript",
     "JavaScript",
     "C#",
+    "ASP.NET",
     "Python",
     "React",
     "Vue",
-    "Angular",
-    "Node / Express",
-    "ASP.NET",
+    "Node.js / Express.js",
+    "NuGet Package Creation",
     "REST APIs",
   ],
   "Data & Cloud": [
@@ -21,10 +22,21 @@ const skills = {
     "Azure",
     "Azure Functions",
     "Azure DevOps",
-    "Docker",
+    "Google Cloud",
     "Git",
   ],
-  Design: ["Figma", "UI/UX", "Prototyping", "Graphic Design"],
+  Design: [
+    "Figma", 
+    "UI/UX", 
+    "CSS", 
+    "Tailwind", 
+    "Bootstrap", 
+    "Prototyping", 
+    "Graphic Design", 
+    "Photoshop", 
+    "Canva", 
+    "Google Material 3"
+  ],
 };
 
 export function HomeSkills() {
@@ -56,6 +68,12 @@ export function HomeSkills() {
             </StaggerItem>
           ))}
         </StaggerChildren>
+
+        <FadeIn delay={0.2} className="mt-20">
+          <p className="text-sm font-mono text-center">
+              *This is just a snapshot of my skillset. I'm always interested in learning new technologies and tools as needed.
+          </p>
+        </FadeIn>
       </div>
     </section>
   );

@@ -5,13 +5,13 @@ import Image from "next/image";
 
 export function HomeHero() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden bg-surface-dark">
       <div className="max-w-6xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28">
         <div className="grid md:grid-cols-12 gap-8 items-center">
           {/* Text side */}
           <div className="md:col-span-6 lg:col-span-7">
             <FadeIn>
-              <p className="font-mono text-sm uppercase tracking-[0.15em] text-orange">
+              <p className="font-mono text-sm uppercase tracking-[0.15em] text-cyan font-bold">
                 Creative Full Stack Developer &ndash; Portland, OR
               </p>
             </FadeIn>
@@ -21,7 +21,7 @@ export function HomeHero() {
               </h1>
             </FadeIn>
             <FadeIn delay={0.2}>
-              <p className="mt-4 font-mono text-sm uppercase tracking-[0.15em] text-orange">
+              <p className="mt-4 font-mono text-sm uppercase tracking-[0.15em] text-cyan font-bold">
                 Design + Code
               </p>
             </FadeIn>
@@ -80,7 +80,7 @@ export function HomeHero() {
                 {/* Photo */}
                 <div className="relative z-10 mx-4 mt-4">
                   <Image
-                    src="/profile.png"
+                    src="/profile.jpg"
                     alt="Aylee Shomali"
                     width={500}
                     height={600}
