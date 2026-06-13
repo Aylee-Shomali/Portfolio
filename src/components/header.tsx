@@ -1,42 +1,36 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Monogram } from "./monogram";
 
 const links = [
-  { href: "/", label: "Home" },
-  { href: "/work", label: "Work" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
+  { href: "#work", label: "Work" },
+  { href: "#about", label: "About" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export function Header() {
-  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 bg-canvas/90 backdrop-blur-sm border-b border-ink/5">
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 group" aria-label="Home">
+        <a href="#" className="flex items-center gap-3 group" aria-label="Home">
           <Monogram className="w-8 h-8" />
           <span className="font-display font-semibold text-lg tracking-tight hidden sm:block">
             Aylee Shomali
           </span>
-        </Link>
+        </a>
 
         <ul className="hidden md:flex items-center gap-8">
           {links.map(({ href, label }) => (
             <li key={href}>
-              <Link
+              <a
                 href={href}
-                className={`font-mono text-sm uppercase tracking-wider transition-colors hover:text-orange ${
-                  pathname === href ? "text-orange" : "text-muted"
-                }`}
+                className="font-mono text-sm uppercase tracking-wider text-muted hover:text-orange transition-colors"
               >
                 {label}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
@@ -62,15 +56,13 @@ export function Header() {
           <ul className="px-6 py-4 space-y-3">
             {links.map(({ href, label }) => (
               <li key={href}>
-                <Link
+                <a
                   href={href}
                   onClick={() => setMenuOpen(false)}
-                  className={`block font-mono text-sm uppercase tracking-wider ${
-                    pathname === href ? "text-orange" : "text-muted"
-                  }`}
+                  className="block font-mono text-sm uppercase tracking-wider text-muted"
                 >
                   {label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

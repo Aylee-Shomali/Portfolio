@@ -1,5 +1,6 @@
 import { SectionLabel } from "@/components/section-label";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,27 +13,31 @@ export default function ForwardFocusedPage() {
     <article className="max-w-4xl mx-auto px-6 py-20 md:py-28">
       <nav className="mb-8">
         <Link
-          href="/work"
+          href="/#work"
           className="font-mono text-sm text-muted hover:text-orange transition-colors"
         >
-          ← Back to work
+          ← Back to home
         </Link>
       </nav>
 
       <SectionLabel>Project 01</SectionLabel>
-      <h1 className="mt-4 font-display text-5xl md:text-6xl font-semibold">
+      <h1 className="mt-4 font-display text-5xl md:text-6xl font-bold text-orange">
         Forward Focused LLC
       </h1>
       <p className="mt-4 text-lg text-muted max-w-xl">
         Complete website redesign for a small business — design through deployment, working directly with the business owner.
       </p>
 
-      {/* Image placeholder */}
-      <div className="mt-12 aspect-video bg-surface-dark rounded-sm border border-ink/5 flex items-center justify-center">
-        <span className="font-mono text-sm text-muted">Project screenshots coming soon</span>
+      <div className="mt-12 aspect-video bg-surface-dark rounded-sm border border-ink/5 overflow-hidden">
+        <Image
+          src="/projects/forward-focused.png"
+          alt="Forward Focused website screenshot"
+          width={1200}
+          height={675}
+          className="w-full h-full object-cover"
+        />
       </div>
 
-      {/* Details grid */}
       <div className="mt-12 grid md:grid-cols-3 gap-8 py-8 border-y border-ink/10">
         <div>
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Role</span>
@@ -85,7 +90,6 @@ export default function ForwardFocusedPage() {
         </section>
       </div>
 
-      {/* Next project */}
       <div className="mt-20 pt-8 border-t border-ink/10">
         <Link
           href="/work/growth-forge"

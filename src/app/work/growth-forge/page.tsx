@@ -1,5 +1,6 @@
 import { SectionLabel } from "@/components/section-label";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,15 +13,15 @@ export default function GrowthForgePage() {
     <article className="max-w-4xl mx-auto px-6 py-20 md:py-28">
       <nav className="mb-8">
         <Link
-          href="/work"
+          href="/#work"
           className="font-mono text-sm text-muted hover:text-orange transition-colors"
         >
-          ← Back to work
+          ← Back to home
         </Link>
       </nav>
 
       <SectionLabel>Project 02</SectionLabel>
-      <h1 className="mt-4 font-display text-5xl md:text-6xl font-semibold">
+      <h1 className="mt-4 font-display text-5xl md:text-6xl font-bold text-orange">
         Growth Forge
       </h1>
       <p className="mt-4 text-lg text-muted max-w-xl">
@@ -28,12 +29,16 @@ export default function GrowthForgePage() {
         business client as part of the OSU CS Capstone.
       </p>
 
-      {/* Image placeholder */}
-      <div className="mt-12 aspect-video bg-surface-dark rounded-sm border border-ink/5 flex items-center justify-center">
-        <span className="font-mono text-sm text-muted">Project screenshots coming soon</span>
+      <div className="mt-12 aspect-video bg-surface-dark rounded-sm border border-ink/5 overflow-hidden">
+        <Image
+          src="/projects/growth-forge.png"
+          alt="Growth Forge screenshot"
+          width={1200}
+          height={675}
+          className="w-full h-full object-cover"
+        />
       </div>
 
-      {/* Details grid */}
       <div className="mt-12 grid md:grid-cols-3 gap-8 py-8 border-y border-ink/10">
         <div>
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Role</span>
@@ -49,8 +54,7 @@ export default function GrowthForgePage() {
         </div>
       </div>
 
-      {/* Pullquote placeholder */}
-      <blockquote className="mt-12 border-l-4 border-orange pl-6 py-2">
+      <blockquote className="mt-12 border-l-4 border-cyan pl-6 py-2">
         <p className="font-display text-xl md:text-2xl italic text-ink/80">
           &ldquo;Client feedback quote coming soon.&rdquo;
         </p>
@@ -100,21 +104,37 @@ export default function GrowthForgePage() {
         </section>
       </div>
 
-      <div className="mt-20 pt-8 border-t border-ink/10">
+      <div className="mt-20 pt-8 border-t border-ink/10 flex justify-between">
         <Link
           href="/work/forward-focused"
-          className="group flex items-center justify-between"
+          className="group flex items-center gap-3"
+        >
+          <span className="text-2xl text-muted group-hover:text-orange group-hover:-translate-x-1 transition-all">
+            ←
+          </span>
+          <div>
+            <span className="font-mono text-xs text-muted uppercase tracking-[0.2em]">
+              Previous
+            </span>
+            <p className="mt-1 font-display text-xl font-semibold group-hover:text-orange transition-colors">
+              Forward Focused
+            </p>
+          </div>
+        </Link>
+        <Link
+          href="/work/fire-fueler"
+          className="group flex items-center gap-3 text-right"
         >
           <div>
             <span className="font-mono text-xs text-muted uppercase tracking-[0.2em]">
-              Previous Project
+              Next
             </span>
-            <p className="mt-1 font-display text-2xl font-semibold group-hover:text-orange transition-colors">
-              Forward Focused LLC
+            <p className="mt-1 font-display text-xl font-semibold group-hover:text-orange transition-colors">
+              Fire Fueler
             </p>
           </div>
-          <span className="text-2xl text-muted group-hover:text-orange group-hover:-translate-x-1 transition-all">
-            ←
+          <span className="text-2xl text-muted group-hover:text-orange group-hover:translate-x-1 transition-all">
+            →
           </span>
         </Link>
       </div>

@@ -6,7 +6,9 @@
   --color-surface-dark: #EDE5D6;
   --color-ink: #221E18;
   --color-orange: #F2541B;
-  --color-terracotta: #B5471E;
+  --color-terracotta: #A0522D;
+  --color-cyan: #00C4D4;
+  --color-cyan-light: #00C4D420;
   --color-teal: #1F5F66;
   --color-wood: #C79A5E;
   --color-muted: #6B6256;
@@ -19,6 +21,8 @@
   --color-ink: var(--color-ink);
   --color-orange: var(--color-orange);
   --color-terracotta: var(--color-terracotta);
+  --color-cyan: var(--color-cyan);
+  --color-cyan-light: var(--color-cyan-light);
   --color-teal: var(--color-teal);
   --color-wood: var(--color-wood);
   --color-muted: var(--color-muted);
@@ -37,7 +41,14 @@ body {
   color: var(--color-canvas);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
