@@ -8,7 +8,7 @@ export function HomeContact() {
       <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
         <FadeIn>
           <h2 className="font-display text-5xl md:text-6xl font-bold text-orange">
-            Get in Touch
+            Contact Me
           </h2>
         </FadeIn>
         <FadeIn delay={0.1}>
