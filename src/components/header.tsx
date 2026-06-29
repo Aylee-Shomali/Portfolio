@@ -4,9 +4,10 @@ import { useState } from "react";
 import { Monogram } from "./monogram";
 
 const links = [
-  { href: "#work", label: "Work" },
-  { href: "#about", label: "About" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#work", label: "Work" },
+  { href: "/#about", label: "About" },
+  { href: "/#contact", label: "Contact" },
+  { href: "/shop", label: "Shop" },
 ];
 
 export function Header() {
@@ -15,7 +16,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-canvas/90 backdrop-blur-sm border-b border-ink/5">
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-3 group" aria-label="Home">
+        <a href="/" className="flex items-center gap-3 group" aria-label="Home">
           <Monogram className="w-8 h-8" />
           <span className="font-display font-semibold text-lg tracking-tight hidden sm:block">
             Aylee Shomali

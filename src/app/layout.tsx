@@ -45,7 +45,7 @@ export default function RootLayout({
       lang="en"
       className={`${fraunces.variable} ${hanken.variable} ${plexMono.variable} antialiased`}
     >
-      <body className="min-h-screen flex flex-col bg-canvas text-ink font-body">
+      <body className="flex flex-col bg-canvas text-ink font-body">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

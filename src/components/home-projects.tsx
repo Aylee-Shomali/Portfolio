@@ -17,12 +17,6 @@ const projects = [
     image: "/projects/growth-forge.png",
     href: "/work/growth-forge",
   },
-  {
-    number: "03",
-    title: "Fire Fueler",
-    image: "/projects/fire-fueler.png",
-    href: "/work/fire-fueler",
-  },
 ];
 
 export function HomeProjects() {
@@ -35,29 +29,33 @@ export function HomeProjects() {
           </h2>
         </FadeIn>
 
-        <StaggerChildren className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <StaggerChildren className="mt-12 grid sm:grid-cols-2 gap-8 max-w-4xl">
           {projects.map((project) => (
             <StaggerItem key={project.number}>
               <Link
                 href={project.href}
-                className="group block"
+                className="group block bg-surface rounded-lg border border-ink/5 overflow-hidden hover:shadow-lg transition-shadow duration-300"
               >
-                <h3 className="font-display text-2xl md:text-3xl font-semibold text-orange">
-                  <span className="font-mono text-lg">{project.number}</span>{" "}
-                  {project.title}
-                </h3>
-                <div className="mt-4 aspect-[4/3] bg-surface rounded-sm border border-ink/5 overflow-hidden">
+                <div className="p-5 pb-0">
+                  <h3 className="font-display text-2xl md:text-3xl font-semibold text-orange">
+                    <span className="font-mono text-lg">{project.number}</span>{" "}
+                    {project.title}
+                  </h3>
+                </div>
+                <div className="mt-4 aspect-[4/3] overflow-hidden">
                   <Image
                     src={project.image}
                     alt={`${project.title} screenshot`}
                     width={600}
                     height={450}
-                    className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-300"
+                    className="w-full h-full object-cover object-left-top group-hover:scale-[1.02] transition-transform duration-300"
                   />
                 </div>
-                <p className="mt-4 font-mono text-sm text-orange group-hover:text-terracotta transition-colors">
-                  View Project <span aria-hidden>→</span>
-                </p>
+                <div className="p-5 pt-3">
+                  <p className="font-mono text-sm text-cyan">
+                    View Project <span aria-hidden>→</span>
+                  </p>
+                </div>
               </Link>
             </StaggerItem>
           ))}

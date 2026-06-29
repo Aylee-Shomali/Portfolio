@@ -28,20 +28,20 @@ export default function ForwardFocusedPage() {
         Complete website redesign for a small business — design through deployment, working directly with the business owner.
       </p>
 
-      <div className="mt-12 aspect-video bg-surface-dark rounded-sm border border-ink/5 overflow-hidden">
+      <div className="mt-12 rounded-sm border border-ink/5 overflow-hidden">
         <Image
           src="/projects/forward-focused.png"
           alt="Forward Focused website screenshot"
           width={1200}
           height={675}
-          className="w-full h-full object-cover"
+          className="w-full h-auto block"
         />
       </div>
 
       <div className="mt-12 grid md:grid-cols-3 gap-8 py-8 border-y border-ink/10">
         <div>
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Role</span>
-          <p className="mt-2 font-semibold">Solo — design & development</p>
+          <p className="mt-2 font-semibold">Design & development</p>
         </div>
         <div>
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Stack</span>
@@ -61,6 +61,9 @@ export default function ForwardFocusedPage() {
             their brand. The project covered the full scope — from initial discovery
             conversations with the business owner through to production deployment.
           </p>
+          <p className="mt-4 text-muted leading-relaxed">
+            Having worked with Forward Focused on its first website, brand colors, and logo design many year prior, this project was an exciting continuation of that effort. I was able to build off of the original ideas and design direction, while also creating a new, modernized look and feel for the brand. The project included a full redesign of the website, including a new logo, color palette, typography, and imagery. I also incrementally implemented the UI and technical upgrades to the site using HTML, CSS, JavaScript, and Bootstrap, and deployed it on Azure.
+          </p>
         </section>
 
         <section>
@@ -68,15 +71,15 @@ export default function ForwardFocusedPage() {
           <ul className="mt-4 space-y-3 text-muted leading-relaxed">
             <li className="flex gap-3">
               <span className="text-orange font-mono text-sm mt-0.5">01</span>
-              <span>Created a clickable Figma prototype for the full redesign, iterating with the business owner on direction.</span>
+              <span>Created a complete clickable Figma prototype for the full redesign, iterating with the business owner on direction.</span>
             </li>
             <li className="flex gap-3">
               <span className="text-orange font-mono text-sm mt-0.5">02</span>
-              <span>Designed the logo in collaboration with the owner.</span>
+              <span>Designed the new refreshed vector logo in collaboration with the owner.</span>
             </li>
             <li className="flex gap-3">
               <span className="text-orange font-mono text-sm mt-0.5">03</span>
-              <span>Built the site with HTML, CSS, JavaScript, and Bootstrap.</span>
+              <span>Built the site with HTML, CSS, JavaScript, Bootstrap, and a lightweight C# Back-End.</span>
             </li>
             <li className="flex gap-3">
               <span className="text-orange font-mono text-sm mt-0.5">04</span>
@@ -88,12 +91,27 @@ export default function ForwardFocusedPage() {
             </li>
           </ul>
         </section>
+
+        <section>
+          <h2 className="font-display text-2xl font-semibold">Results</h2>
+          <ul className="mt-4 space-y-2 text-muted leading-relaxed">
+            <li>A fully updated and modernized website that better represented the Forward Focused brand and a complete design system that can be used for future marketing and communication efforts.</li>
+          </ul>
+          <a
+            href="https://www.forwardfocused.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center gap-2 font-mono text-sm text-cyan hover:text-teal transition-colors"
+          >
+            Visit the site <span aria-hidden>↗</span>
+          </a>
+        </section>
       </div>
 
-      <div className="mt-20 pt-8 border-t border-ink/10">
+      <div className="mt-20 pt-8 border-t border-ink/10 flex justify-end">
         <Link
           href="/work/growth-forge"
-          className="group flex items-center justify-between"
+          className="group flex items-center gap-3 text-right"
         >
           <div>
             <span className="font-mono text-xs text-muted uppercase tracking-[0.2em]">
