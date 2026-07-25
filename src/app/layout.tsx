@@ -24,14 +24,37 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aylee Shomali — Full-Stack Developer",
+  metadataBase: new URL("https://portfolio-eight-zeta-67.vercel.app"),
+  title: {
+    default: "Aylee Shomali — Full-Stack Developer",
+    template: "%s | Aylee Shomali",
+  },
   description:
-    "Full-stack developer based in Portland, OR. Design and development — UI, back-end services, and deployment.",
+    "Aylee Shomali — Full-stack developer based in Portland, OR specializing in Angular, C#, UI/UX, and SQL Server. Design and development — UI, back-end services, and deployment.",
+  keywords: [
+    "Aylee Shomali",
+    "full-stack developer",
+    "software engineer",
+    "Portland OR",
+    "Angular",
+    "C#",
+    "UI/UX",
+    "web developer",
+  ],
+  authors: [{ name: "Aylee Shomali" }],
+  creator: "Aylee Shomali",
   openGraph: {
     title: "Aylee Shomali — Full-Stack Developer",
     description:
-      "Full-stack developer — design and development, end to end.",
+      "Full-stack developer based in Portland, OR — Angular, C#, UI/UX. Design and development, end to end.",
     type: "website",
+    locale: "en_US",
+    url: "https://portfolio-eight-zeta-67.vercel.app",
+    siteName: "Aylee Shomali",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
