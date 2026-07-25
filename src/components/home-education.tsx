@@ -4,7 +4,7 @@ import { FadeIn } from "@/components/motion";
 
 export function HomeEducation() {
   return (
-    <section id="education" className="scroll-mt-20">
+    <section id="education" className="scroll-mt-20 bg-surface-dark">
       <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
         <FadeIn>
           <h2 className="font-display text-5xl md:text-6xl font-bold text-orange">
